@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nava</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/info.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="../pages/home.html">Nava</a></div>
+        <ul>
+            <li><a href="../pages/home.html" >Home</a></li>
+            <li><a href="../pages/report.html">Report Lost Item</a></li>
+            <li><a href="../pages/AboutUs.html"  >About Us</a></li>
+            <li><a href="../pages/ContactUs.html" class="active">Contact Us</a></li>
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </nav>
+
+    <main >
+        <section class="contact-form">
+            <h2 id="h2ofform">We'd love to hear from you!</h2>
+            <p id="pofform">If you have any questions, suggestions, or just want to say hello, feel free to reach out using the form below.</p>
+            <br>
+            <form action="#" method="POST" id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <label for="email">Eamil</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" placeholder="What's in your mind?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer >
+        <p>© 2025 Nava. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault(); 
+        
+       
+            document.getElementById("contactForm").style.display = "none";
+        
+        
+            document.getElementById("h2ofform").innerHTML = "Thank You!";
+            document.getElementById("pofform").innerHTML = "Your message has been sent successfully. We'll get back to you soon!";
+        });
+        </script>
+        
+        
+</body>
+</html>

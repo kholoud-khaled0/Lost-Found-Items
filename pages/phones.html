@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Found Phones - Nava</title>
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="stylesheet" href="../style/phones.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo"><a href="../pages/home.html">Nava</a></div>
+    <ul>
+      <li><a href="../pages/home.html" >Home</a></li>
+      <li><a href="../pages/report.html">Report Lost Item</a></li>
+      <li><a href="../pages/AboutUs.html" >About Us</a></li>
+      <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+      <li><a href="../index.html">Log out</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Found Phones</h2>
+
+    <div class="item-list" id="item-list">
+      <div class="item">
+        <img src="../images/Phone1.jpg" alt="Found Phone 1">
+        <div class="item-details">
+          <p>Phone</p>
+          <p class="detail">Found at Library on 2025-04-15</p>
+        </div>
+        <button class="delete-btn">🗑️</button>
+      </div>
+
+      <div class="item">
+        <img src="../images/phone2.jpg" alt="Found Phone 2">
+        <div class="item-details">
+          <p>Phone</p>
+          <p class="detail">Found at Cafeteria on 2025-04-14</p>
+        </div>
+        <button class="delete-btn">🗑️</button>
+      </div>
+    </div>
+
+    <!-- Add Item Form -->
+    <div class="add-item-form">
+      <h3>Add a Found Phone</h3>
+      <form id="add-phone-form" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="image">Upload Image of the Phone</label>
+          <input type="file" id="image" name="image" accept="image/*" required>
+          <img id="preview" class="image-preview" src="" alt="Preview">
+        </div>
+        <div class="form-group">
+          <label for="date">Date Found</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location Found</label>
+          <input type="text" id="location" name="location" placeholder="e.g., Library" required>
+        </div>
+        <button type="submit" class="submit-btn">Add Phone</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../JS/phones.js"></script>
+  <footer>
+    &copy; 2025 Nava - All rights reserved.
+  </footer>
+  
+</body>
+</html>

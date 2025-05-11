@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #2c2c54;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px #f9ca24;
+    display: flex;
+    align-items: center;/* عمودي*/
+    justify-content: space-between;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .logo {
+    color: #f9ca24;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+.container {
+    max-width: 700px;
+    width: 600px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c2c54;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #2c2c54;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group input[type="submit"] {
+    background-color: #f9ca24;
+    color: #2c2c54;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #e1b012;
+}
+
+.form-group .login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.form-group .login-link a {
+    color: #e1b012;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.phone-input-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone-input-wrapper select#country-code {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.phone-input-wrapper input#phone {
+    flex: 1;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

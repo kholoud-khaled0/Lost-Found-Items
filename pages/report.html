@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Nava </title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/report.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="../pages/home.html">Nava</a></div>
+        <ul>
+            <li><a href="../pages/home.html" >Home</a></li>
+            <li><a href="../pages/report.html" class="active">Report Lost Item</a></li>
+            <li><a href="../pages/AboutUs.html"  >About Us</a></li>
+            <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="report-form">
+            <h2>Report a Lost Item</h2>
+            <form id="reportForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="studentId">Your ID</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Enter your student ID" required>
+
+                <label for="item">What Did You Lose?</label>
+                <select id="item" name="item" required>
+                    <option value="" disabled selected>Select an Item</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="backpack">Backpack</option>
+                    <option value="keys">Keys</option>
+                    <option value="wallet">Wallet</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <div class="other-item" style="display: none;">
+                    <label for="other-item">Specify Item</label>
+                    <input type="text" id="other-item" name="other-item" placeholder="Enter the item">
+                </div>
+
+                <label for="location">Where Did You Lose It?</label>
+                <select id="location" name="location" required>
+                    <option value="" disabled selected>Select a Location</option>
+                    <option value="library">Library</option>
+                    <option value="cafeteria">Cafeteria</option>
+                    <option value="classroom">Classroom</option>
+                    <option value="gym">Gym</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <div class="other-location" style="display: none;">
+                    <label for="other-location">Specify Location</label>
+                    <input type="text" id="other-location" name="other-location" placeholder="Enter the location">
+                </div>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Describe the item (color, brand, etc.)" required></textarea>
+
+                <label for="photo">Upload a Photo (Optional)</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <img id="preview" class="image-preview" />
+
+                <label for="dateLost">Date Lost</label>
+                <input type="date" id="dateLost" name="dateLost" required>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+      
+        <div class="custom-alert" id="customAlert">
+            <p id="alertMessage"></p>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Nava - All rights reserved.
+      </footer>
+
+    <script src="../JS/report.js"></script>
+</body>
+</html>

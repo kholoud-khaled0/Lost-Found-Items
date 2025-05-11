@@ -1,0 +1,136 @@
+/* Home page styles */
+.home-page {
+  background-image: url('/images/Home.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles scoped to home-page */
+.home-page header {
+  background: url('https://images.unsplash.com/photo-1582719478141-52b6c7b26c4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: #f9ca24;
+  position: relative;
+  z-index: 1;
+}
+
+
+.home-page header h1 {
+  font-size: 48px;
+  -webkit-text-stroke: 1px #000000;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+.home-page header p {
+  color: #f9ca24;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Container styles */
+.home-page .container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Search bar styles */
+.home-page .search-bar {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d8a823;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: #f3efef;
+}
+
+.home-page .search-bar:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Categories section styles */
+.home-page .categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+
+}
+
+.home-page .category {
+  background-color: #f3efef;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.home-page .category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .category img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #f9ca24;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-page .category img:hover {
+  transform: scale(1.1);
+}
+footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color:#f9ca24;
+  background-color: #2c2c54; 
+}
+
+.home-page .category p {
+  font-weight: 600;
+  color: #2c2c54;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+/* Report button styles */
+.home-page .report-btn {
+  display: inline-block;
+  margin: 40px auto 0;
+  background-color: #f9ca24;
+  color: #2c2c54;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-page .report-btn:hover {
+  background-color: #f9ca24;
+  transform: scale(1.1);
+}

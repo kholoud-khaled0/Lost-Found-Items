@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Wallets - Nava</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/wallets.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"><a href="../pages/home.html">Nava</a></div>
+        <ul>
+            <li><a href="../pages/home.html" >Home</a></li>
+            <li><a href="../pages/report.html">Report Lost Item</a></li>
+            <li><a href="../pages/AboutUs.html" >About Us</a></li>
+            <li><a href="../pages/ContactUs.html">Contact Us</a></li>
+            <li><a href="../index.html">Log out</a></li>
+        </ul>
+    </nav>
+
+    <!-- Wallets List -->
+    <div class="container">
+        <h2>My Wallets</h2>
+
+        <!-- Wallet Item -->
+        <div class="item">
+            <img src="../images/Wallet1.jpg" alt="Wallet Image">
+            <div class="item-details">
+                <p>Wallet 1</p>
+                <p class="detail">Balance: $250.00</p>
+            </div>
+            <button class="delete-btn">🗑️</button>
+        </div>
+
+        <!-- Wallet Item -->
+        <div class="item">
+            <img src="../images/Wallet2.jpg" alt="Wallet Image">
+            <div class="item-details">
+                <p>Wallet 2</p>
+                <p class="detail">Balance: $150.00</p>
+            </div>
+            <button class="delete-btn">🗑️</button>
+        </div>
+
+        <!-- Add Wallet Form -->
+        <div class="add-item-form">
+            <h3>Add New Wallet</h3>
+            <form id="addWalletForm">
+                <div class="form-group">
+                    <label for="wallet-name">Wallet Name</label>
+                    <input type="text" id="wallet-name" placeholder="Enter wallet name" required>
+                </div>
+                <div class="form-group">
+                    <label for="wallet-balance">Balance</label>
+                    <input type="number" id="wallet-balance" placeholder="Enter balance" required>
+                </div>
+                <div class="form-group">
+                    <input type="file" id="wallet-image" accept="image/*">
+                    <div class="image-preview" id="image-preview"></div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Add Wallet" class="submit-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Nava - All rights reserved.
+      </footer>
+<script src="../JS/wallets.js"></script>
+</body>
+</html>
